@@ -1,6 +1,6 @@
 
 pybrainfuck
-==========
+===========
 
 .. image:: https://img.shields.io/pypi/v/pybrainfuck.svg
    :alt: PyPi Version
@@ -36,7 +36,7 @@ pybrainfuck
 be the fastest or most efficient but rather to be extensive in the
 implementation, configurable and extendable.
 
-It contains a ``BrainFck `` class which can be directly used or subclassed to
+It contains a ``BrainFck`` class which can be directly used or subclassed to
 use in scripts. The code is fully documented and commented.
 
 Or else the pip installed script ``pybrainfuck`` can be directly used.
