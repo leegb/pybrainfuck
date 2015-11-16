@@ -21,6 +21,8 @@
 from __future__ import (absolute_import, division, print_function,
                         unicode_literals)
 
+import sys
+
 # StringIO from io is cStringIO which has problems with encoding if used
 # to capture output as below
 if sys.version_info.major == 2:
@@ -28,7 +30,9 @@ if sys.version_info.major == 2:
 else:
     from io import StringIO
 
+
 from pybrainfuck import BrainFck
+
 
 test_program = '''
 # Yo!
