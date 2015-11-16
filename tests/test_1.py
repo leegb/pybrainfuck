@@ -23,7 +23,10 @@ from __future__ import (absolute_import, division, print_function,
 
 # StringIO from io is cStringIO which has problems with encoding if used
 # to capture output as below
-import StringIO
+if sys.version_info.major == 2:
+    from StringIO import StringIO
+else:
+    from io import StringIO
 
 from pybrainfuck import BrainFck
 
@@ -58,7 +61,7 @@ H
 
 def test_run(main=False):
 
-    fout = StringIO.StringIO()
+    fout = StringIO()
     bfck = BrainFck(
         fout=fout,
         linemode=True,
