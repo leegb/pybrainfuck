@@ -13,4 +13,4 @@ python:
 #  - pip install your_package
 
 # command to run tests
-script: cd tests && nosetests -v -v
+script: cd tests && PYTHONPATH=.. nosetests -v -v
